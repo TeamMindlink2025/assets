@@ -1,0 +1,108 @@
+/* Team Mindlink Luxurious Style Guide */
+
+/* Color Palette */
+:root {
+  --gold-dark: #8E793E;
+  --gold: #AD974F;
+  --charcoal: #231F20;
+  --light-grey: #EAEAEA;
+  --white: #FFFFFF;
+}
+
+/* Typography */
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: var(--charcoal);
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 span.italic {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* Buttons */
+.button-primary {
+  background-color: var(--gold);
+  color: var(--white);
+  padding: 12px 24px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--gold-dark);
+}
+
+.button-outline {
+  background: transparent;
+  color: var(--white);
+  padding: 12px 24px;
+  border: 2px solid var(--white);
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-outline:hover {
+  background: var(--white);
+  color: var(--charcoal);
+}
+
+/* Navigation Bar */
+.navbar {
+  background: var(--white);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: var(--charcoal);
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.navbar .contact-button {
+  background-color: var(--gold);
+  color: var(--white);
+  padding: 10px 16px;
+  border: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(35, 31, 32, 0.7), rgba(35, 31, 32, 0.7)), url('your-image.jpg') center/cover no-repeat;
+  padding: 100px 40px;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
